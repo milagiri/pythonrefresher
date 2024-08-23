@@ -37,6 +37,7 @@ print(f"Pi rounded to two decimal places is {pi:.2f}")
 
 # 6. Lists, tuples, and sets
 
+'''
 list1 = ["Sherlock", "Hercule", "Jane"]
 tuple1 = ("Sherlock", "Hercule", "Jane") 
 # you can't modify a tuple, no adding and removing
@@ -77,3 +78,25 @@ print(set1)
 
 set1.add("Smith")
 print(set1)
+'''
+
+# 7. More set operations -- difference, union, intersection
+
+'''
+friends = {"Bob", "Rolf", "Anne"}
+abroad = {"Bob", "Anne", "Jack"}
+local_friends = friends.difference(abroad)
+abroad_notfriends = abroad.difference(friends)
+total_peeps = friends.union(abroad)
+friendsabroad = friends.intersection(abroad)
+
+print(f"Friends: {friends}")
+print(f"People abroad: {abroad}")
+print(f"Local friends = friends - people abroad: {local_friends}")
+print(f"People abroad = abroad - friends: {abroad_notfriends}")
+print(f"Everyone = friends union abroad: {total_peeps}")
+print(f"Friends abroad = friends intersection abroad: {friendsabroad}")
+
+'''
+
+# 8. 
