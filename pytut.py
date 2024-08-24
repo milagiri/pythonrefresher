@@ -99,4 +99,42 @@ print(f"Friends abroad = friends intersection abroad: {friendsabroad}")
 
 '''
 
-# 8. 
+# 8. Boolean and if-else conditional
+'''
+yourName = input("Who are you? ")
+if yourName == "Joe":
+	print("Shmoe")
+elif yourName == "Mike":
+	print("Psych")
+elif yourName == "Peter":
+	print("Eater")
+else:
+	print(f"Hello {yourName}")
+
+
+
+# Comparing lists
+list1 = ["Adam", "Sachin", "Prabu"]
+list2 = ["Adam", "Sachin", "Prabu"]
+list3 = ["Sachin", "Adam", "Prabu"]
+
+print(f"list1 = {list1}")
+print(f"list2 = {list2}")
+print(f"list3 = {list3}")
+print(f"Is list1 == list2 {list1 == list2}")
+print(f"Is list1 == list3 {list1 == list3}")
+
+# Comparing sets
+set1 = {"Adam", "Sachin", "Prabu"}
+set2 = {"Adam", "Sachin", "Prabu"}
+set3 = {"Sachin", "Adam", "Prabu"}
+
+print(f"set1 = {set1}")
+print(f"set2 = {set2}")
+print(f"set3 = {set3}")
+print(f"Is set1 == set2 {set1 == set2}")
+print(f"Is set1 == set3 {set1 == set3}")
+
+'''
+
+
