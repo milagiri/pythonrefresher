@@ -220,3 +220,17 @@ for friend in friends:
 	print(f"{friend} is my friend")
 '''
 
+# adding the elements of a list
+
+'''
+numbers = [29, 43, 25, 36, 66]
+total = sum(numbers)
+print(f"The sum of {numbers} is {total}")
+
+print("Now we will do it using a for loop")
+fortotal = 0
+
+for number in numbers:
+	fortotal += number
+	print(f"The sum so far: {fortotal}")
+'''
