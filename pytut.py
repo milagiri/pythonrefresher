@@ -36,7 +36,6 @@ print(f"Pi rounded to two decimal places is {pi:.2f}")
 '''
 
 # 6. Lists, tuples, and sets
-
 '''
 list1 = ["Sherlock", "Hercule", "Jane"]
 tuple1 = ("Sherlock", "Hercule", "Jane") 
@@ -55,7 +54,7 @@ print(tuple1[1])
 list1[0] = "Nancy"
 print(list1)
 
-# The following statemetn will return an error because you can't modify a tuple
+# The following statement will return an error because you can't modify a tuple
 # tuple1[0] = "Benoit"
 print(tuple1)
 
@@ -66,18 +65,36 @@ print(list1)
 list1.append("Sherlock")
 print(list1)
 
-
 list1.remove("Hercule")
 print(list1)
-# This will return an error ecuase you can't modify a tuple
+# This will return an error because you can't modify a tuple
 # tuple1.append("Nancy")
 
-
 set1.add("Smith")
 print(set1)
 
 set1.add("Smith")
 print(set1)
+
+# Different types test
+set2 = {"string", 45, 32.0}
+list2 = ["string", 45, 32.0]
+tuple2 = ("string", 45, 32.0)
+listoftuples = [("Queen", "Bohemian Rhapsody"), ("Doors", "Riders on the Storm"), ("Bob Dylan", "Hurricane")]
+
+print(set2)
+print(list2)
+print(tuple2)
+print(f"List of tuples: {listoftuples}")
+'''
+
+'''
+Recap of cans and cants with lists, tuples, and sets
+
+Lists: Mutable, ordered, duplicates ok, different types ok
+Tuples: Immutable, ordered, duplicates, ok, elements of different types ok
+Sets, Mutable, unordered, unique, elements of different types ok
+
 '''
 
 # 7. More set operations -- difference, union, intersection
@@ -137,7 +154,7 @@ print(f"Is set1 == set3 {set1 == set3}")
 
 '''
 
-# In keyword
+# In keyword for lists, sets, and tuples
 '''
 
 friends = {"Sachin", "Avinash", "Prabu"}
@@ -155,7 +172,6 @@ if will_you_be_my_friend:
 
 print(f"My friends are {friends}")
 '''
-
 
 
 
