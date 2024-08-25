@@ -173,6 +173,50 @@ if will_you_be_my_friend:
 print(f"My friends are {friends}")
 '''
 
+# while loop
+
+'''
+number = 9
+prompt_str = "Would you like to pay? (Y/n) "
+
+# Take 1
+user_input = input(prompt_str).lower()
+
+while user_input != "n":
+	user_num = int(input("Guess a number: "))
+	if user_num == number:
+		print("You got it!")
+		break
+	elif abs(user_num - number) == 1:
+		print("You're close!")
+	else:
+		print("You're off.")
+
+	user_input = input(prompt_str).lower()
 
 
+# Take 2 - better
+while True:
+	user_input = input(prompt_str).lower()
+
+	if user_input == "n":
+		break
+
+	user_num = int(input("Guess a number: "))
+	if user_num == number:
+		print("You got it!")
+		break
+	elif abs(user_num - number) == 1:
+		print("You're close!")
+	else:
+		print("You're off.")
+'''
+
+# for loop with in for lists
+'''
+friends = ["Adam", "Sachin", "Prabu"]
+
+for friend in friends:
+	print(f"{friend} is my friend")
+'''
 
