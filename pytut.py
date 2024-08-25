@@ -137,4 +137,26 @@ print(f"Is set1 == set3 {set1 == set3}")
 
 '''
 
+# In keyword
+'''
+
+friends = {"Sachin", "Avinash", "Prabu"}
+
+person = input("Who are you? ")
+will_you_be_my_friend = False
+
+if person in friends:
+	print("Hello, friend")
+else:
+	will_you_be_my_friend = input("Hello, stranger. Will you be my friend? ") == "Yes"
+
+if will_you_be_my_friend:
+	friends.add(person)
+
+print(f"My friends are {friends}")
+'''
+
+
+
+
 
