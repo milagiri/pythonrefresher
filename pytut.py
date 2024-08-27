@@ -234,3 +234,28 @@ for number in numbers:
 	fortotal += number
 	print(f"The sum so far: {fortotal}")
 '''
+
+# APIs
+
+'''
+Why are APIs important for AI/ML?
+APIs play a crucial role in AI and data science projects by enabling:
+
+1. Access to AI models: APIs allow developers to integrate pre-trained AI models into their applications, such as NLP models from GPT-4 API or computer vision models from Google Cloud Vision API.
+2. Data acquisition: APIs provide access to large datasets required for training machine learning models. This includes public datasets like those offered by Kaggle or data from social media platforms.
+3. AI-powered services: Many companies offer APIs that allow developers to integrate AI capabilities into their applications without building the models themselves. Examples include sentiment analysis, entity recognition, and language translation.
+'''
+
+'''
+import requests
+import json
+
+# Return data about astronauts currently in space
+response = requests.get("http://api.open-notify.org/astros")
+
+def jprint(obj):
+    text = json.dumps(obj, sort_keys=True, indent=4)
+    print(text)
+
+jprint(response.json())
+'''
