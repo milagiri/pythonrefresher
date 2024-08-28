@@ -246,13 +246,15 @@ APIs play a crucial role in AI and data science projects by enabling:
 3. AI-powered services: Many companies offer APIs that allow developers to integrate AI capabilities into their applications without building the models themselves. Examples include sentiment analysis, entity recognition, and language translation.
 '''
 
-'''
+
 import requests
 import json
 
 # Return data about astronauts currently in space
 response = requests.get("http://api.open-notify.org/astros")
+print(response.text)
 
+'''
 def jprint(obj):
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
