@@ -154,7 +154,7 @@ print(f"Is set1 == set3 {set1 == set3}")
 
 '''
 
-# In keyword for lists, sets, and tuples
+# 9. In keyword for lists, sets, and tuples
 '''
 
 friends = {"Sachin", "Avinash", "Prabu"}
@@ -173,7 +173,7 @@ if will_you_be_my_friend:
 print(f"My friends are {friends}")
 '''
 
-# while loop
+# 10. while loop
 
 '''
 number = 9
@@ -195,7 +195,7 @@ while user_input != "n":
 	user_input = input(prompt_str).lower()
 
 
-# Take 2 - better
+# 11. Take 2 - better
 while True:
 	user_input = input(prompt_str).lower()
 
@@ -212,7 +212,7 @@ while True:
 		print("You're off.")
 '''
 
-# for loop with in for lists
+# 12. for loop with in for lists
 '''
 friends = ["Adam", "Sachin", "Prabu"]
 
@@ -220,7 +220,7 @@ for friend in friends:
 	print(f"{friend} is my friend")
 '''
 
-# adding the elements of a list
+# 13. adding the elements of a list
 
 '''
 numbers = [29, 43, 25, 36, 66]
@@ -235,6 +235,63 @@ for number in numbers:
 	print(f"The sum so far: {fortotal}")
 '''
 
+# 14. List comprehensions in Python
+'''
+numbers = [1,3,5]
+doubled = [num * 2 for num in numbers]
+print(doubled)
+
+friends = ["Prabu", "Adam", "Anjan", "Avinash", "Sachin", "Nikita"]
+start_s = [friend for friend in friends if friend.startswith("A")]
+print(start_s)
+'''
+
+#15. Dictionaries
+# Used to store key value pairs in Python
+
+friend_ages = {"Prabu":41, "Sachin":46, "Adam":37}
+print(friend_ages)
+
+friend_ages["Suda"] = 45
+print(friend_ages)
+
+friend_ages["Sachin"] = 47
+print(friend_ages)
+
+friend_ages.pop("Suda")
+print(friend_ages)
+
+
+# List of dictionaries
+'''
+friends = [
+	{"name":"Sachin", "age":47},
+	{"name":"Adam", "age":37},
+	{"name":"Nikita", "age":32}
+]
+
+print(f"{friends[0]["name"]} is {friends[0]["age"]} years old.")
+
+# You can nest lists, tuples, and dictionaries
+
+# Iterating over dictionaries
+
+grades = {"Saatvik":99, "Roger":86, "Nolan":93}
+
+
+
+for grade in grades:
+	print(f"{grade}'s grade is {grades[grade]}")
+
+
+for student, grade in grades.items():
+	print(f"{student}'s grade is {grade}")
+
+# Checking if a key is in the dictionary
+if "Saatvik" in grades:
+	print(f'Saatviks grade is {grades["Saatvik"]}')
+'''
+
 # APIs
 
 '''
@@ -246,13 +303,15 @@ APIs play a crucial role in AI and data science projects by enabling:
 3. AI-powered services: Many companies offer APIs that allow developers to integrate AI capabilities into their applications without building the models themselves. Examples include sentiment analysis, entity recognition, and language translation.
 '''
 
-
+'''
 import requests
 import json
 
 # Return data about astronauts currently in space
 response = requests.get("http://api.open-notify.org/astros")
 print(response.text)
+'''
+
 
 '''
 def jprint(obj):
@@ -261,3 +320,4 @@ def jprint(obj):
 
 jprint(response.json())
 '''
+
