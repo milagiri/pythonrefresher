@@ -292,6 +292,16 @@ if "Saatvik" in grades:
 	print(f'Saatviks grade is {grades["Saatvik"]}')
 '''
 
+# 15. Destructuring variables
+
+x,y = 12,15
+print(f"{x} and {y}")
+
+friendsandages = {"Prabu":41, "Sachin":46, "Adam":37}
+
+for friend, age in friendsandages.items():
+	print(f"{friend} is {age} years old.")
+
 # APIs
 
 '''
@@ -320,4 +330,6 @@ def jprint(obj):
 
 jprint(response.json())
 '''
+
+
 
