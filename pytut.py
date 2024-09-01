@@ -249,6 +249,7 @@ print(start_s)
 #15. Dictionaries
 # Used to store key value pairs in Python
 
+'''
 friend_ages = {"Prabu":41, "Sachin":46, "Adam":37}
 print(friend_ages)
 
@@ -260,7 +261,7 @@ print(friend_ages)
 
 friend_ages.pop("Suda")
 print(friend_ages)
-
+'''
 
 # List of dictionaries
 '''
@@ -299,8 +300,22 @@ print(f"{x} and {y}")
 
 friendsandages = {"Prabu":41, "Sachin":46, "Adam":37}
 
+print(f"List of tuples from a dictionary: {list(friendsandages.items())}")
+
 for friend, age in friendsandages.items():
 	print(f"{friend} is {age} years old.")
+
+
+# 16. Splitting a list into two lists
+
+head, *collecttail = [1,2,3,4,5,6]
+print(f"head: {head}")
+print(f"collecttail: {collecttail}")
+
+*collecthead, tail = [1,2,3,4,5,6]
+print(f"collecthead: {collecthead}")
+print(f"tail: {tail}")
+
 
 # APIs
 
