@@ -294,7 +294,7 @@ if "Saatvik" in grades:
 '''
 
 # 15. Destructuring variables
-
+'''
 x,y = 12,15
 print(f"{x} and {y}")
 
@@ -315,7 +315,25 @@ print(f"collecttail: {collecttail}")
 *collecthead, tail = [1,2,3,4,5,6]
 print(f"collecthead: {collecthead}")
 print(f"tail: {tail}")
+'''
 
+# 16. Functions
+
+def sum2(x,y):
+	z = x+y
+	print(f"The sum of {x} and {y} is {z}")
+	return z
+
+print(f"The sum is {sum2(3,5)}")
+
+def sum_with_default(x,y=9):
+	sum2 = x+y
+	return sum2
+
+xx,yy=13,19
+
+print(f"The sum of {xx} and {yy} is {sum_with_default(xx,yy)}")
+print(f"The sum of {xx} and 9 is {sum_with_default(xx)}")
 
 # APIs
 
