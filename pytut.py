@@ -318,7 +318,7 @@ print(f"tail: {tail}")
 '''
 
 # 16. Functions
-
+'''
 def sum2(x,y):
 	z = x+y
 	print(f"The sum of {x} and {y} is {z}")
@@ -334,6 +334,28 @@ xx,yy=13,19
 
 print(f"The sum of {xx} and {yy} is {sum_with_default(xx,yy)}")
 print(f"The sum of {xx} and 9 is {sum_with_default(xx)}")
+'''
+
+# 17. lambda functions
+
+lambdafunc = lambda x,y : x + y
+
+print(lambdafunc(5,2))
+
+def twopowerx(x):
+	if(x==0):
+		return 1
+	
+	ans = 1
+	while x>0:
+		ans *= 2
+		x -= 1
+	return ans
+
+
+sequence = [0,1,2,3,4,5,6]
+expsequence = [twopowerx(x) for x in sequence]
+print(expsequence)
 
 # APIs
 
