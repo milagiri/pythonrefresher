@@ -337,7 +337,7 @@ print(f"The sum of {xx} and 9 is {sum_with_default(xx)}")
 '''
 
 # 17. lambda functions
-
+'''
 lambdafunc = lambda x,y : x + y
 
 print(lambdafunc(5,2))
@@ -356,6 +356,23 @@ def twopowerx(x):
 sequence = [0,1,2,3,4,5,6]
 expsequence = [twopowerx(x) for x in sequence]
 print(expsequence)
+'''
+
+# 18. Dictionary comprehensions
+'''
+users = [
+(0, "Adam", "Moreland"),
+(1, "Sachin", "Chheda"),
+(2, "Nikita", "Maheshwari")]
+
+user_mappings = {user[1]:user for user in users}
+firstname_input = input("Enter your first nane: ")
+if firstname_input in user_mappings.keys():
+	_, firstname, lastname = user_mappings[firstname_input]
+	print(f"Welcome, back M. {lastname}")
+else:
+	print("Sorry, I don't have a record of you in the system.")
+'''
 
 # APIs
 
