@@ -374,6 +374,26 @@ else:
 	print("Sorry, I don't have a record of you in the system.")
 '''
 
+usernamespasswords = [
+(0, "Jackson", "password"),
+(23, "Anderson", "0x2233"),
+(24, "Gunderson", "flagpole224"),
+(29, "Svenson", "sjj211$"),
+(39, "Mattsson", "jww%1")]
+
+user_mappings = {user[1]:user for user in usernamespasswords}
+username_input = input("Enter your username: ")
+password_input = input("Enter your password: ")
+if username_input in user_mappings.keys():
+	_, username, password = user_mappings[username_input]
+	if password_input == password:
+		print(f"Welcome, {username}!")
+	else:
+		print("Username and password don't match.")
+else:
+	print("Username and password don't match.")
+
+
 # APIs
 
 '''
